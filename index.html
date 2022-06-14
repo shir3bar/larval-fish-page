@@ -118,10 +118,11 @@
 
 <html>
 <head>
-	<title>This is my paper title</title>
+	<title>Analysis of Larval Fish Feeding Behavior under Naturalistic Conditions</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="Creative and Descriptive Paper Title." />
-	<meta property="og:description" content="Paper description." />
+	<meta property="og:title" content="Analysis of Larval Fish Feeding Behavior under Naturalistic Conditions" />
+	<meta property="og:description" content="We work to detect the feeding behavior of larval fish in the wild.
+	We built a unique data acquisition system, deployed it in an aquaculture rearing facility, and collected 300 videos." />
 
 	<!-- Get from Google Analytics -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -138,23 +139,28 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Creative and Descriptive Paper Title</span>
+		<span style="font-size:36px">Analysis of Larval Fish Feeding Behavior under Naturalistic Conditions</span>
 		<table align=center width=600px>
 			<table align=center width=600px>
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a></span>
+							<span style="font-size:24px">Shir Bar</span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a></span>
+							<span style="font-size:24px">Liraz Levy</span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a></span>
+							<span style="font-size:24px"><a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="http://iui-eilat.ac.il/People/AcademicStaffProfile.aspx?sid=106">Roi Holzman</a></span>
 						</center>
 					</td>
 				</tr>
@@ -168,7 +174,17 @@
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[GitHub]</a></span><br>
+							<span style="font-size:24px"><a href='./resources/poster.pdf'>[Poster]</a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href=''>[Data]</a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href='https://github.com/shir3bar/larval_fish_feeding'>[GitHub]</a></span><br>
 						</center>
 					</td>
 				</tr>
@@ -201,7 +217,13 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				This is my abstract.
+				Modern research efforts concerned with animal behavior rely heavily on image and video analysis. While such data are now quick to obtain, extracting and analyzing complex behaviors under naturalistic conditions from digital imagery is still a major challenge.
+In this study, we introduce a novel system for imaging and analyzing the feeding behavior of freely-swimming fish larvae, as filmed in large aquaculture rearing pools, a naturalistic environment.
+We first describe the design of a specialized system for imaging these tiny, fast-moving creatures.
+We then show that an analysis pipeline based on action classification can be used to successfully detect and classify the sparsely-occurring behavior of the fish larvae in a curated experimental setting from videos featuring multiple animals.
+Additionally, we introduce three new annotated datasets of underwater videography, in a curated and an uncurated setting.
+Finally, we share the methods used and insights gained during the training and evaluation of models on low sample sizes and highly imbalanced datasets.
+As these challenges are common to the analysis of animal behavior under naturalistic conditions, we believe our findings can contribute to the growing field of computer vision for the study and understanding of animal behavior.
 			</td>
 		</tr>
 	</table>
