@@ -169,7 +169,7 @@
 				<tr>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href=''>[Paper]</a></span>
+							<span style="font-size:24px"><a href='#Paper'>[Paper]</a></span>
 						</center>
 					</td>
 					<td align=center width=120px>
@@ -179,12 +179,12 @@
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href=''>[Data]</a></span>
+							<span style="font-size:24px"><a href='#Data'>[Data]</a></span>
 						</center>
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href=''>[GitHub]</a></span><br>
+							<span style="font-size:24px"><a href='#Code'>[GitHub]</a></span><br>
 						</center>
 					</td>
 				</tr>
@@ -195,9 +195,9 @@
 	<center>
 		<table align=center width=850px>
 			<tr>
-				<td width=260px>
+				<td width=800px>
 					<center>
-						<img class="round" style="width:500px" src="./resources/teaser.png"/>
+						<img class="round" style="width:960px" src="./resources/sample_vids/seq2_30dph_f15 - frames 150800-151000_mid.gif"/>
 					</center>
 				</td>
 			</tr>
@@ -205,7 +205,8 @@
 		<table align=center width=850px>
 			<tr>
 				<td>
-					This will be some informative text
+					<center>Can you spot the feeding fish?</center>
+
 				</td>
 			</tr>
 		</table>
@@ -284,13 +285,94 @@ As these challenges are common to the analysis of animal behavior under naturali
 		</center>
 	</table>
 	<hr>
-<center><h1>Data</h1></center>
-<p align="center">
-	<video width="660" height="395" controls>
-		<source src="./resources/sample_vids/strike_naturalistic.avi" type="video/avi">
-Your browser does not support the video tag.
-</video>
-</p>
+	<div id="Data">
+	<center><h1>Data</h1></center>
+<!-- <video width="320" height="240" controls>
+  <source src="./resources/sample_vids/strike_naturalistic.mp4"  type="video/mp4">
+	say something
+</video> -->
+	<table align=center width=800px>
+			<tr>
+				<td align=center width=800px>
+					<center>
+					<img src = "./resources/sample_vids/strike_balanced.gif", width="300" height="300"/>
+					<img src = "./resources/sample_vids/swim_balanced.gif", width="300" height="300"/>
+				</center>
+			</td>
+		</tr>
+	</table>
+
+ <table align=center width=850px>
+	  <tr>
+	  	<center>
+	  		<td align=center>
+	  			<span style="font-size:14px">Two examples from the Balanced dataset, a strike (left) and a swim (right). </span>
+	  		</td>
+	  	</center>
+	  </tr>
+</table>
+
+	<br>
+	<table align=center width=850px>
+		<center>
+			<tr>
+				<td>
+					Our goal is to detect feeding strikes of larval fish (left) in untrimmed videos.
+					To do this, we decided to take an action classification approach to distinguish between swimming (right),
+					and striking behavior (left).
+					We present a total of 3 datasets, one uncurated and two curated:
+					<ol>
+						<li><b>Uncurated - </b>
+					  11 untrimmed videos: 1080x1092 pixels, 20-30 minutes @ 750fps.
+							Annotation are spatio-temporal locations of the feeding strike events. <a href=''>[Uncurated - data coming soon]</a> </li>
+						<li><b>Balanced - </b>
+					  A highly curated dataset; clips are cropped tightly around single fish performing a single behavior,
+						lighting is fairly even and no occlusions are present.
+							71 swim clips and 66 strike clips, clip length varies, average is 46 frames,
+							average size is 385<sup>2</sup> pixels.
+							The annotation here is simply "strike" or "swim", clips are divided into the train/val/test.
+							The two examples above are from this dataset.
+							<a href=''>[Balanced]</a> </li>
+						<li><b>Naturalistic - </b>
+							resulted from our curated experiment (see below);
+							clips are more challenging in terms of lighting and occlusions. There are 63 strike clips
+							and 4,500 other clips:, 118 contain no fish and 4,382 contain mostly swimming fish.
+							Clip length is 80 frames, size varies between 250-650<sup>2</sup> pixels.
+							The annotation here is "strike" and everything else is considered a "swim".
+							An extended set of annotations is provided in an additional csv file,
+							these pertain to visual and behavioral attributes of the clips,
+							see supplemental of the paper for info.
+							<a href=''>[Naturalistic]</a>
+						  </li>
+					</ol>
+				</td>
+			</tr>
+		</center>
+	</table>
+   	<table align=center width=800px>
+			<tr>
+				<td align=center width=800px>
+					<center>
+						<img src = "./resources/sample_vids/strike_naturalistic.gif", width="300" height="300"/>
+						<img src = "./resources/sample_vids/swim_naturalistic.gif", width="300" height="300"/>
+					</center>
+	  		</td>
+	  </tr>
+</table>
+
+
+ <table align=center width=850px>
+	  <tr>
+	  	<center>
+	  		<td align=center>
+	  			<span style="font-size:14px">Two examples from the Naturalistic dataset, a strike (left) and a swim (right). </span>
+	  		</td>
+	  	</center>
+	  </tr>
+</table>
+
+
+ <!--
 	<table align=center width=420px>
 		<center>
 			<tr>
@@ -316,77 +398,147 @@ Your browser does not support the video tag.
 				</td>
 			</tr>
 		</center>
-	</table>
+	</table>     -->
+
 	<table align=center width=800px>
 		<br>
 		<tr><center>
-			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>
+			<span style="font-size:28px">&nbsp;<a href=''>[Data]</a>
 		</span></center>
 		</tr>
 	</table>
+	</div>
 	<br>
 	<hr>
-
+	<div id="Code">
 	<center><h1>Code</h1></center>
-
-	<table align=center width=420px>
-		<center>
-			<tr>
-				<td>
-				</td>
-			</tr>
-		</center>
-	</table>
 	<table align=center width=400px>
 		<tr>
 			<td align=center width=400px>
 				<center>
-					<td><img class="round" style="width:450px" src="./resources/pipeline_scheme.png"/></td>
+					<td><img class="round" style="width:650px" src="./resources/pipeline_scheme.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+
+ <table align=center width=850px>
+	  <tr>
+	  	<center>
+	  		<td align=center>
+	  			<span style="font-size:14px">Visualization of our analysis pipeline and the curated experiment. </span>
+	  		</td>
+	  	</center>
+	  </tr>
+</table>
+                                                                                                                                                               	<br>
+	<table align=center width=850px>
+		<center>
+			<tr>
+				<td>
+					To detect feeding strikes of larval fish we take a detection followed by action classification approach.
+					We trained a <a href='https://proceedings.neurips.cc/paper/2015/hash/14bfa6bb14875e45bba028a21ed38046-Abstract.html'>
+					Faster-R-CNN </a> using <a href="https://github.com/facebookresearch/detectron2">Detectron2</a>
+					 to detect our fish. We also trained a
+					<a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Feichtenhofer_SlowFast_Networks_for_Video_Recognition_ICCV_2019_paper.html">SlowFast</a>
+					action classifier using <a href="https://pytorchvideo.org/">PyTorchVideo</a>
+					to classify the fish's behavior into one of two classes 'swim' or 'strike'.
+					<br>
+					We test this pipeline in a curated experiment - we sample the frames where we know strike occurs,
+					and additional frames where we know strikes do not occur. To simulate a more natural ratio of events we sample
+					roughly ~10 times more frames without strikes.
+					For each frame sampled we applied the detector, followed by the action classifier.
+					By doing this for the 11 videos from the uncurated dataset with the highest strike rates
+					we created the Naturalistic dataset.
+					<br>
+					The code for training the SlowFast model, including some custom data augmentations,
+					and for this experiment will be available in our repository soon.
+				</td>
+			</tr>
+		</center>
+	</table>
+	<table align=center width=800px>
+		<br>
+		<tr><center>
+			<span style="font-size:28px">&nbsp;<a href=''>[GitHub]</a>
+			</span></center>
+		</tr>
+	</table>
+	</div>
+	<br>
+	<hr>
+	<div id="Performance">
+	<center><h1>Performance evaluation</h1></center>
+	<table align=center width=800px>
+		<tr>
+			<td align=center width=800px>
+				<center>
+					<td><img class="round" style="width:800px" src="./resources/performance_eval.png"/></td>
 				</center>
 			</td>
 		</tr>
 	</table>
 	<table align=center width=850px>
+			<tr>
+				<center>
+				<td align=center>
+					<span style="font-size:14px">Results from our simulation study showing the performance for the
+						performance of the same classifier varies greatly under different data imbalances.</span>
+				</td>
+				</center>
+			</tr>
+		</table>
+
+	<table align=center width=850px>
 		<center>
 			<tr>
 				<td>
-					Short description if wanted
+					The fact that our events of interested are extremely rare results in a very small sample size and high data imbalance.
+					ROCs are <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118432">known</a> to be overly optimistic for imbalanced data.
+					PRCs are a popular alternative but it is less <a href="https://link.springer.com/chapter/10.1007/978-3-030-50423-6_6">known </a>
+					that they are sensitive to the level of data imbalance in data, even the same classifier can produce dramatically different results.
+					This is crucial when taking a trained classifier out to the wild, where feeding strikes are much more
+					sporadic than in our curated datasets.
+					<br>
+					We developed a simulation scheme that enables us to assess what performance might be under
+					small sample size at different levels of data imbalance and with different classifier qualities.
+					This is an R code utilizing the <a href="https://github.com/evalclass/precrec">precrec</a>
+					for ROC and PRC calculations, you can find it in our repository.
+
 				</td>
 			</tr>
 		</center>
 	</table>
-	<table align=center width=800px>
-		<br>
-		<tr><center>
-			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>
-			</span></center>
-		</tr>
-	</table>
+	</div>
 	<br>
 	<hr>
+<div id="Paper">
 	<table align=center width=450px>
 		<center><h1>Paper and Supplementary Material</h1></center>
 		<tr>
-			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
-			<td><span style="font-size:14pt">F. Author, S. Author, T. Author.<br>
+		<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
+			<td><span style="font-size:14pt">Coming soon<!--F. Author, S. Author, T. Author.<br>
 				<b>Creative and Descriptive Paper Title.</b><br>
 				In Conference, 20XX.<br>
-				(hosted on <a href="">ArXiv</a>)<br>
-				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
-				<span style="font-size:4pt"><a href=""><br></a>
+				(hosted on <a href="">ArXiv</a>)<br> </span>
+				(<a href="./resources/camera-ready.pdf">camera ready</a>)<br>
+				<span style="font-size:4pt"><a href=""><br></a>-->
 				</span>
 			</td>
+
 		</tr>
 	</table>
+	</div>
 	<br>
 
-	<table align=center width=600px>
+
+	<!--<table align=center width=600px>
 		<tr>
 			<td><span style="font-size:14pt"><center>
 				<a href="./resources/bibtex.txt">[Bibtex]</a>
 			</center></span></td>
 		</tr>
-	</table>
+	</table>-->
 
 	<hr>
 	<br>
